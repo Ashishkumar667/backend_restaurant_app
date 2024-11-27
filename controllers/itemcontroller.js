@@ -122,7 +122,7 @@ const getFoodByResturantController = async (req, res) => {
     if (!food) {
       return res.status(404).send({
         success: false,
-        message: "No Food Found with htis id",
+        message: "No Food Found with this id",
       });
     }
     res.status(200).send({
