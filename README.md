@@ -9,6 +9,8 @@ This is the backend for a restaurant management application. The project provide
 - **Customer Management**: Manages customer data, including contact information and order history.
 - **Authentication**: Provides user authentication for restaurant staff using secure login mechanisms.
 - **Database**: Uses a database (e.g., MongoDB or PostgreSQL) to persist data related to orders, menu items, and customers.
+- **Authorization**: it will authorize the user based on Role-Based Authorization.
+- **Role-Based Access Control (RBAC)** : This include "Admin","Chef","customer", - Admin can update status of order, etc..these all are responsible for rbac.
 
 ## Technologies Used
 
