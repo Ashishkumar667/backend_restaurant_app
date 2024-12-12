@@ -7,7 +7,7 @@ const router = express.Router();
 
 const usercontroller = async (req, res) => {
     try {
-        const user = await userSchema.findById({ _id: req.body.id });
+        const user = await userSchema.findById( req.body.id );
         if (!user) {
             return res.status(404).send({
                 success: false,
@@ -36,7 +36,7 @@ const usercontroller = async (req, res) => {
 //update user
 const updateuserController = async (req, res) => {
     try {
-        const User = await userSchema.findById({_id:req.body.id })
+        const User = await userSchema.findById(req.body.id)
 
         if (!User) {
             return res.status(404).send({ message: 'User not found' })
@@ -67,7 +67,7 @@ const updateuserController = async (req, res) => {
 //reset password
 const resetpasswordController = async (req, res) => {
     try {
-        const user = await userSchema.findById({ _id: req.body.id })
+        const user = await userSchema.findById(req.body.id)
 
         if (!user) {
             return res.status(404).send({ message: 'User not found' })
@@ -102,7 +102,7 @@ const resetpasswordController = async (req, res) => {
 //delete useraccount
 const deleteuseraccount =async(req,res) =>{
  try {
-    const user = await userSchema.findByIdAndDelete({_id: req.body.id});
+    const user = await userSchema.findByIdAndDelete(req.body.id);
 
     if(!user){
         res.status(500).send({message:"cannot find user"})
