@@ -11,7 +11,7 @@ const {
   placeOrderController,
   orderStatusController,
 } = require("../controllers/itemcontroller");
-const adminMiddleware = require("../middlewares/adminMiddleware");
+const adminMiddleware = require("../middlewares/AdminMiddleware");
 
 const router = express.Router();
 
